@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { DistancePipeModule } from './pipes/distance.pipe-module';
 import { CommonModule } from '@angular/common';
+import { FileSizePipeModule } from './pipes/file-size.pipe-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,7 +20,8 @@ import { CommonModule } from '@angular/common';
     MaterialModule,
     RouterModule,
     AppRoutingModule,
-    DistancePipeModule
+    DistancePipeModule,
+    FileSizePipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
