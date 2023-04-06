@@ -6,16 +6,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { DistancePipeModule } from './pipes/distance.pipe-module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    CommonModule,
     HttpClientModule,
     MaterialModule,
     RouterModule,
     AppRoutingModule,
+    DistancePipeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
