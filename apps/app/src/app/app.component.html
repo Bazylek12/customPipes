@@ -6,5 +6,8 @@
 <!-- <p>{{ 6.2 * 1024 * 1024 * 1024 * 1024 * 1024 | fileSize }}</p> -->
 
 <!-- TEASER PIPE -->
-<p>{{ 'Some text that is fine' | teaser: 10 }}</p>
-<p>{{ 'Some text that is definitely too long' | teaser: 5 }}</p>
+<!-- <p>{{ 'Some text that is fine' | teaser: 10 }}</p>
+<p>{{ 'Some text that is definitely too long' | teaser: 5 }}</p> -->
+
+<!-- FILTER PIPE -->
+<p>{{ [1, 2, 3, 4, 5] | filter:  criterion}}</p>

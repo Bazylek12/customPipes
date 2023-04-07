@@ -10,6 +10,7 @@ import { DistancePipeModule } from './pipes/distance.pipe-module';
 import { CommonModule } from '@angular/common';
 import { FileSizePipeModule } from './pipes/file-size.pipe-module';
 import { TeaserPipeModule } from './pipes/teaser.pipe-module';
+import { FilterPipeModule } from './pipes/filter.pipe-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,6 +25,7 @@ import { TeaserPipeModule } from './pipes/teaser.pipe-module';
     DistancePipeModule,
     FileSizePipeModule,
     TeaserPipeModule,
+    FilterPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
