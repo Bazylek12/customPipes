@@ -3,5 +3,8 @@
 <p>{{ '800' | distance }}</p> -->
 
 <!-- FILE SIZE PIPE -->
-<p>{{ 6.2 * 1024 * 1024 * 1024 * 1024 * 1024 | fileSize }}</p>
+<!-- <p>{{ 6.2 * 1024 * 1024 * 1024 * 1024 * 1024 | fileSize }}</p> -->
 
+<!-- TEASER PIPE -->
+<p>{{ 'Some text that is fine' | teaser: 10 }}</p>
+<p>{{ 'Some text that is definitely too long' | teaser: 5 }}</p>

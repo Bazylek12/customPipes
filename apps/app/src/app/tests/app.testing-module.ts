@@ -20,6 +20,7 @@ import { MaxNumberPipeTestComponent } from './max-number-pipe.test-component';
 import { PluckPipeTestComponent } from './pluck-pipe.test-component';
 import { DistancePipeModule } from '../pipes/distance.pipe-module';
 import { FileSizePipeModule } from '../pipes/file-size.pipe-module';
+import { TeaserPipeModule } from '../pipes/teaser.pipe-module';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { FileSizePipeModule } from '../pipes/file-size.pipe-module';
     AppRoutingModule,
     DistancePipeModule,
     FileSizePipeModule,
+    TeaserPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

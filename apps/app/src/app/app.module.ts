@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { DistancePipeModule } from './pipes/distance.pipe-module';
 import { CommonModule } from '@angular/common';
 import { FileSizePipeModule } from './pipes/file-size.pipe-module';
+import { TeaserPipeModule } from './pipes/teaser.pipe-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { FileSizePipeModule } from './pipes/file-size.pipe-module';
     AppRoutingModule,
     DistancePipeModule,
     FileSizePipeModule,
+    TeaserPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
