@@ -3,6 +3,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({ name: 'search' })
 export class SearchPipe implements PipeTransform {
   transform(value: string, substring: string): string[] {
+    if (!value || !substring) {
+      return [];
+    }
     const words = value.split(' ');
     const matchingWords = words.filter(word => word.toLowerCase().includes(substring.toLowerCase()))
 
