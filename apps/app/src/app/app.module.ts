@@ -12,6 +12,7 @@ import { FileSizePipeModule } from './pipes/file-size.pipe-module';
 import { TeaserPipeModule } from './pipes/teaser.pipe-module';
 import { FilterPipeModule } from './pipes/filter.pipe-module';
 import { SortPipeModule } from './pipes/sort.pipe-module';
+import { SearchPipeModule } from './pipes/search.pipe-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,6 +29,7 @@ import { SortPipeModule } from './pipes/sort.pipe-module';
     TeaserPipeModule,
     FilterPipeModule,
     SortPipeModule,
+    SearchPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
