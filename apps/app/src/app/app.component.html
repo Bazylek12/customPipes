@@ -17,6 +17,18 @@
 <p>{{  ['b', 'a', 'c'] | sort:  'desc' }}</p> -->
 
 <!-- SEARCH PIPE -->
-<p>{{  'Some text that is searchable' | search:  'earch' }}</p>
+<!-- <p>{{  'Some text that is searchable' | search:  'earch' }}</p>
 <p>{{  'Some awesome somewhat something well done' | search:  'some' }}</p>
-<p>{{  'Some awesome somewhat something well done' | search:  'searchable' }}</p>
+<p>{{  'Some awesome somewhat something well done' | search:  'searchable' }}</p> -->
+
+<!-- CREDIT CARD NUMBER PIPE-->
+<p>{{  '1234567890123456' | creditCardNumber }}</p>
+<p>{{  '1234 567890123 456' | creditCardNumber }}</p>
+<p>{{  '1234-5678-9012-3456' | creditCardNumber }}</p>
+<p>{{  '1234!5678!9012!3456' | creditCardNumber }}</p>
+<p>{{  '1234@5678-9012+3456' | creditCardNumber }}</p>
+<p>{{  '1234  5678  9012  3456' | creditCardNumber }}</p>
+<p>{{  '1234567890' | creditCardNumber}}</p>
+<p>{{  '1234  5678  9012  3456 6489' | creditCardNumber }}</p>
+<p>{{  1234567890 | creditCardNumber }}</p>
+
