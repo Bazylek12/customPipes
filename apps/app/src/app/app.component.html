@@ -41,6 +41,10 @@
 <p>{{ '0048 692 69 69' | phoneNumber }}</p>
 <p>{{ '+486926992' | phoneNumber }}</p> -->
 
-<!-- PLACEHOLDER IMG PIPE -->
+<!-- PLACEHOLDER IMG PIPE
 <img [src]="null | placeholderImg" />
-<img [src]="'/assets/img/test.jpg' | placeholderImg" />
+<img [src]="'/assets/img/test.jpg' | placeholderImg" /> -->
+
+<!-- TRANSLATE PIPE -->
+<p>{{ 'ONE' | translate: 'en' }}</p>
+<p>{{ 'ONE' | translate: 'pl' }}</p>

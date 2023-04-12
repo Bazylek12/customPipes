@@ -1,5 +1,4 @@
 import { givenNativeElement } from './given';
-import { PlaceholderImgPipeTestComponent } from './placeholder-img-pipe.test-component';
 import { TranslatePipeTestComponent } from './translate-pipe.test-component';
 
 describe('PlaceholderImgPipe', () => {
