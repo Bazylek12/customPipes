@@ -15,6 +15,8 @@ import { SortPipeModule } from './pipes/sort.pipe-module';
 import { SearchPipeModule } from './pipes/search.pipe-module';
 import { CreditCardNumberPipeModule } from './pipes/credit-card-number.pipe-module';
 import { PhoneNumberPipeModule } from './pipes/phone-number.pipe-module';
+import { PLACEHOLDER_IMAGE_SOURCE } from './pipes/placeholder-img-config';
+import { PlaceholderImgPipeModule } from './pipes/placeholder-img.pipe-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -34,8 +36,14 @@ import { PhoneNumberPipeModule } from './pipes/phone-number.pipe-module';
     SearchPipeModule,
     CreditCardNumberPipeModule,
     PhoneNumberPipeModule,
+    PlaceholderImgPipeModule,
   ],
-  providers: [],
+  providers: [ 
+    { 
+      provide: PLACEHOLDER_IMAGE_SOURCE,
+      useValue: `/assets/img/placeholder.png`,
+    }
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

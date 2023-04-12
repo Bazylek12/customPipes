@@ -33,10 +33,14 @@
 <p>{{  1234567890 | creditCardNumber }}</p> -->
 
 <!-- PHONE NUMBER PIPE-->
-<p>{{ '692692692' | phoneNumber }}</p>
+<!-- <p>{{ '692692692' | phoneNumber }}</p>
 <p>{{ '0048692692692' | phoneNumber }}</p>
 <p>{{ '0048 692 692 692' | phoneNumber }}</p>
 <p>{{ '222550000' | phoneNumber }}</p>
 <p>{{ '2225568791' | phoneNumber }}</p>
 <p>{{ '0048 692 69 69' | phoneNumber }}</p>
-<p>{{ '+486926992' | phoneNumber }}</p>
+<p>{{ '+486926992' | phoneNumber }}</p> -->
+
+<!-- PLACEHOLDER IMG PIPE -->
+<img [src]="null | placeholderImg" />
+<img [src]="'/assets/img/test.jpg' | placeholderImg" />
