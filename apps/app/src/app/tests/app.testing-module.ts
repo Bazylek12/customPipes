@@ -25,6 +25,7 @@ import { FilterPipeModule } from '../pipes/filter.pipe-module';
 import { SortPipeModule } from '../pipes/sort.pipe-module';
 import { SearchPipeModule } from '../pipes/search.pipe-module';
 import { CreditCardNumberPipeModule } from '../pipes/credit-card-number.pipe-module';
+import { PhoneNumberPipeModule } from '../pipes/phone-number.pipe-module';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { CreditCardNumberPipeModule } from '../pipes/credit-card-number.pipe-mod
     SortPipeModule,
     SearchPipeModule,
     CreditCardNumberPipeModule,
+    PhoneNumberPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
